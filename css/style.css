@@ -1,0 +1,37 @@
+h1, h2, h3{
+  font-family: 'Days One', sans-serif;
+}
+.background{
+  background: url('../img/background1.jpg') no-repeat center center/cover;
+  height: 100vh;
+}
+/* Jo Landscpaing Logo Size */
+.JoLogo{
+  font-size: 1.30rem;
+}
+/* Theme Color */
+strong{
+  color: rgb(186, 218, 85
+  );
+}
+.btn-JoColor{
+  background: rgb(186, 218, 85
+  );
+}
+.form-control{
+  border:1px solid rgb(186, 218, 85);
+}
+
+.textBackground{
+  background: rgba(245, 245, 245, 0.7);
+  border-radius: 15px;
+}
+
+
+
+a:hover{
+  text-decoration: none;
+}
+.nav-link{
+   font-family: 'Days One', sans-serif;
+}
