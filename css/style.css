@@ -5,10 +5,19 @@ h1, h2, h3{
   background: url('../img/background1.jpg') no-repeat center center/cover;
   height: 100vh;
 }
+/* Navbar */
+.navbar{
+  background:rgba(255,255,255, 0.85);
+}
+.navbar.top{
+  background: transparent;
+}
+
 /* Jo Landscpaing Logo Size */
 .JoLogo{
   font-size: 1.30rem;
 }
+
 /* Theme Color */
 strong{
   color: rgb(186, 218, 85
@@ -22,16 +31,14 @@ strong{
   border:1px solid rgb(186, 218, 85);
 }
 
-.textBackground{
-  background: rgba(245, 245, 245, 0.7);
-  border-radius: 15px;
-}
-
-
 
 a:hover{
   text-decoration: none;
 }
 .nav-link{
    font-family: 'Days One', sans-serif;
+   color: black;
+}
+.btn{
+  font-family: 'Days One', sans-serif;
 }

@@ -20,54 +20,44 @@
 </head>
 <body>
 <!-- Nav and Front Page -->
-  <div class="background">
-      <nav class="navbar navbar-expand-xl navbar-light sticky-top">
-        <div class="container-fluid">
-          <a href="index.html" class="text-dark">
-            <h1 class="JoLogo"><strong>Jo </strong><strong class="text-dark">Landscaping</strong> </h1>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#JoNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="JoNavbar">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-sm"></i> About Us</a></li>
-              <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-sm"></i> Services</a></li>
-              <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-dolly-flatbed fa-sm"></i> Rentals</a></li>
-              <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-address-card fa-sm"></i> Contact Us</a></li>
-            </ul>
-
-            <span class=" navbar-text ml-auto">
-              <a href="Estimate.html" data-toggle="tooltip" data-placement="bottom" data-bs-html="true" title="Or Call at 561-123-4567" class="nav-link btn btn-JoColor">Free Estimate</a>
-            </span>
-
-            <div class="input-group col-sm-3 col">
-              
-              <input type="search" class="form-control lg" placeholder="Search" aria-label="search"
-                aria-describedby="searchButton">
-              <button class="btn btn-dark" type="button" id="button-addon1"><i class="fa fa-search fa-lg"></i></button>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <div class="container">
-        <div class="row row-content align-items-center pt-5">
-          <div class="col textBackground">
-            <h2 class="text-center">A Complete Solution for Your Landscaping Vision.</h2>
-            <h4 class="text-center text-underline">West Palm Beach's favorite landscaping company.</h4>
-          </div>
-        </div>
-      </div>
-      
-      <div class="row row-content align-items-center">
-        <div class="col">
-          <h3>Complete Residential And Commercial Landscpaing Service </h3>
-          
+  <nav id="navbar" class="navbar top navbar-expand-xl navbar-light fixed-top">
+    <div class="container-fluid">
+      <a href="index.html" class="text-dark">
+        <h1 class="JoLogo"><strong>Jo </strong><strong class="text-dark">Landscaping</strong> </h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#JoNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="JoNavbar">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link text-dark" href="aboutus.html"><i class="fa fa-info fa-sm"></i> About Us</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#"><i class="fa fa-list fa-sm"></i> Services</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#"><i class="fa fa-dolly-flatbed fa-sm"></i> Rentals</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#"><i class="fa fa-address-card fa-sm"></i> Contact Us</a></li>
+        </ul>
+  
+        <span class=" navbar-text ml-auto">
           <a href="Estimate.html" data-toggle="tooltip" data-placement="bottom" data-bs-html="true"
             title="Or Call at 561-123-4567" class="nav-link btn btn-JoColor">Free Estimate</a>
+        </span>
+  
+        <div class="input-group col-sm-3 col">
+  
+          <input type="search" class="form-control lg" placeholder="Search" aria-label="search"
+            aria-describedby="searchButton">
+          <button class="btn btn-dark" type="button" id="button-addon1"><i class="fa fa-search fa-lg"></i></button>
         </div>
       </div>
+    </div>
+  </nav>
+  <div class="background position-relative">
+      
+    <div class="position-absolute top-50 start-50 translate-middle">
+      <h2>A Complete Solution for Your Landscaping Vision.</h2>
+      <h4>West Palm's favorite landscaping company.</h4>
+    </div>
   </div>
+
   <!-- Content -->
   <div class="container">
     <!-- Services -->
@@ -104,11 +94,57 @@
         <a href="#">Learn More</a>
       </div>
     </div>
-    <!-- Need Help Aligning the More Serivces Button -->
+    <!-- Need Help Aligning the More Serivces Button  -->
     <div class="row row-content align-items-center">
       <div class="col-12 pt-5">
         <a href="services.html" class="align-self-center"><big>More Services</big> </a>
       </div>
+    </div>
+
+    <!-- Rentals -->
+    <div class="row row-content align-items-center">
+      <div class="col pt-5">
+        <h2 class="text-center">We Offer Rentals On Our Equipment</h2>
+        <p class="text-center">With a few background checks and rental fees, you may choose to operate our slected equipment
+          to rent.</p>
+      </div>
+    </div>
+
+    <!-- Need Help Aligning the More Serivces Button  -->
+    <div class="row row-content align-items-center">
+      <div class="col-12 pt-5">
+        <a href="services.html" class="align-self-center"><big>Learn More</big> </a>
+      </div>
+    </div>
+
+    <!-- Get In Touch -->
+    <div class="row row-content align-items-center">
+      <div class="col pt-5">
+        <h2 class="text-center">Get In Touch</h2>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque temporibus mollitia dolores dolorum quia ipsa?.</p>
+        
+        <!-- Get In Touch Form -->
+        <form action="">
+          <div class="row form-group">
+            <div class="col">
+              <textarea name="message" id="message" class="col form-control" placeholder="Enter Your Message Here..."></textarea>
+            </div>
+          </div>
+          <div class="row form-group">
+            <div class="col-lg-5">
+              <input class="form-control" type="email" id="email" name="email" placeholder="Email Address">
+            </div>
+            <div class="col-lg-5 pt-lg-0 pt-3">
+              <input class="form-control" type="text" id="fullName" name="fullName" placeholder="Email Address">
+            </div>
+            <div class="col pt-lg-0 pt-3">
+              <button type="submit" class="btn btn-JoColor form-control">Submit</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </div>
   </div>
   
 
@@ -120,9 +156,30 @@
   <script src="https://kit.fontawesome.com/1defea4c54.js" crossorigin="anonymous"></script>
 
   <script>
+    // ToolTips
     $(function () {
       $('[data-toggle="tooltip"]').tooltip()
     })
+
+    // Navbar
+    const navbar = document.getElementById('navbar');
+    let scrolled = false;
+
+    window.onscroll = function () {
+      if (window.pageYOffset > 100) {
+        navbar.classList.remove('top');
+        if (!scrolled) {
+          navbar.style.transform = 'translateY(-1px)';
+        }
+        setTimeout(function () {
+          navbar.style.transform = 'translateY(0)';
+          scrolled = true;
+        }, 200);
+      } else {
+        navbar.classList.add('top');
+        scrolled = false;
+      }
+    };
   </script>
 
 </body>
