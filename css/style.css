@@ -30,7 +30,9 @@ strong{
 .form-control{
   border:1px solid rgb(186, 218, 85);
 }
-
+.site-footer{
+  background-image: linear-gradient(white, white, rgb(186,218,85));
+}
 
 a:hover{
   text-decoration: none;
@@ -41,4 +43,10 @@ a:hover{
 }
 .btn{
   font-family: 'Days One', sans-serif;
+}
+
+/* Background for Nav-links */
+.backgroundGrass{
+  background: url('../img/GrassBackgroun.jpg') no-repeat center center/cover;
+  height: 29vh;
 }

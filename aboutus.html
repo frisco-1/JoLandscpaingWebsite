@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jo Landscaping</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+
+  <!-- Additional CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Font Awesome -->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Nav and Front Page -->
+  <nav id="navbar" class="navbar top navbar-expand-xl navbar-light fixed-top">
+    <div class="container-fluid">
+      <a href="index.html">
+        <h1 class="JoLogo"><strong>Jo </strong><strong class="text-dark">Landscaping</strong> </h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#JoNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="JoNavbar">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link text-dark" href="aboutus.html"><i class="fa fa-info fa-sm"></i> About
+              Us</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="services.html"><i class="fa fa-list fa-sm"></i> Services</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#"><i class="fa fa-dolly-flatbed fa-sm"></i>
+              Rentals</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#"><i class="fa fa-address-card fa-sm"></i> Contact
+              Us</a></li>
+        </ul>
+
+        <span class=" navbar-text ml-auto">
+          <a href="Estimate.html" data-toggle="tooltip" data-placement="bottom" data-bs-html="true"
+            title="Or Call at 561-123-4567" class="nav-link btn btn-JoColor">Free Estimate</a>
+        </span>
+
+        <div class="input-group col-sm-3 col">
+
+          <input type="search" class="form-control lg" placeholder="Search" aria-label="search"
+            aria-describedby="searchButton">
+          <button class="btn btn-dark" type="button" id="button-addon1"><i class="fa fa-search fa-lg"></i></button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Background -->
+  <div class="backgroundGrass position-relative">
+
+    <div class="position-absolute top-50 start-50 translate-middle">
+      <h2>Services</h2>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="container">
+    <!-- Place your Form Here -->
+
+
+
+    <!-- End of Placing your form -->
+  </div>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <a href="index.html" class="text-dark">
+            <h1 class="JoLogo"><strong>Jo </strong><strong class="text-dark">Landscaping</strong> </h1>
+
+            <div>
+              <a class="btn btn-social-icon text-dark" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+              <a class="btn btn-social-icon" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+              <a class="btn btn-social-icon" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+              <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+            </div>
+
+          </a>
+        </div>
+        <div class="col">
+          <h5><i class="fa fa-map-marker"></i> 1234 SW West Palm</h5>
+          <h5><i class="fa fa-envelope"></i> <a href="mailto:JoLandscaping@gmail.com">JoLandscaping@gmail.com</a></h5>
+          <h5><i class="fa fa-phone"></i><a role="button" href="tel:+561-123-4567"> 561-123-4567</a> </h5>
+          <h5><i class="fa fa-clock"></i> Mon-Sun: 7am to 5pm</h5>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/1defea4c54.js" crossorigin="anonymous"></script>
+
+  <script>
+    // ToolTips
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+
+    // Navbar
+    const navbar = document.getElementById('navbar');
+    let scrolled = false;
+
+    window.onscroll = function () {
+      if (window.pageYOffset > 100) {
+        navbar.classList.remove('top');
+        if (!scrolled) {
+          navbar.style.transform = 'translateY(-1px)';
+        }
+        setTimeout(function () {
+          navbar.style.transform = 'translateY(0)';
+          scrolled = true;
+        }, 200);
+      } else {
+        navbar.classList.add('top');
+        scrolled = false;
+      }
+    };
+  </script>
+
+</body>
+
+</html>
