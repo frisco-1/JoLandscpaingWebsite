@@ -17,6 +17,19 @@ h1, h2, h3{
 .JoLogo{
   font-size: 1.30rem;
 }
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 20px;
+}
+.textColorB{
+  background: rgba(255,255,255, 0.7);
+  border-radius: 25px;
+}
 
 /* Theme Color */
 strong{
@@ -33,9 +46,12 @@ strong{
 .site-footer{
   background-image: linear-gradient(white, white, rgb(186,218,85));
 }
-
+a{
+  color: black;
+}
 a:hover{
   text-decoration: none;
+  color: rgb(93, 110, 34);
 }
 .nav-link{
    font-family: 'Days One', sans-serif;
