@@ -12,7 +12,11 @@ h1, h2, h3{
 .navbar.top{
   background: transparent;
 }
-
+@media(max-width:1202px){
+  .NavBackColor{
+    background:rgba(255,255,255, 0.85);
+  }
+}
 /* Jo Landscpaing Logo Size */
 .JoLogo{
   font-size: 1.30rem;
