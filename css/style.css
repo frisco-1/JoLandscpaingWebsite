@@ -12,6 +12,7 @@ h1, h2, h3{
 .navbar.top{
   background: transparent;
 }
+
 @media(max-width:1202px){
   .NavBackColor{
     background:rgba(255,255,255, 0.85);
@@ -69,4 +70,8 @@ a:hover{
 .backgroundGrass{
   background: url('../img/GrassBackgroun.jpg') no-repeat center center/cover;
   height: 29vh;
+}
+
+iframe{
+  width: 100%;
 }
